@@ -1,0 +1,5 @@
+# Project exclude paths
+/.gradle/
+/Bulls and Cows/task/build/
+/Problems/Hidden enumeration/out/
+/Problems/Hidden enumeration/out/production/classes/
