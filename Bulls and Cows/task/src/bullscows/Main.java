@@ -1,17 +1,30 @@
 package bullscows;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
 
         final Scanner scanner = new Scanner(System.in);
         final int input = scanner.nextInt();
+        pseudoRandom(input);
 
-        grader(String.valueOf(input), String.valueOf(9305));
+        // grader(String.valueOf(input), String.valueOf(9305));
 
+    }
+
+    static void pseudoRandom(int input) {
+        List<Integer> list = new ArrayList<>(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9));
+        String output = "";
+        if (input > 10) {
+            System.out.println("Error: can't generate a secret number with a length of " + input + " because there aren't enough unique digits.");
+            return;
+        }
+        Collections.shuffle(list);
+        for (int i = 0; i < input; i++) {
+            output += list.get(i);
+        }
+        System.out.println("Random secret number is " + output);
     }
 
     static void grader(String input, String answer) {

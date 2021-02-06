@@ -31,7 +31,7 @@ files:
         // base test with 1 digit number
         @DynamicTestingMethod
         CheckResult test1() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
 
             String output;
@@ -61,7 +61,7 @@ files:
         // standard bulls and cows game
         @DynamicTestingMethod
         CheckResult test2() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             main.execute("4");
             String output = main.execute("10");
@@ -90,7 +90,7 @@ files:
         // max length we can check
         @DynamicTestingMethod
         CheckResult test3() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             main.execute("6");
             String output = main.execute("10");
@@ -119,7 +119,7 @@ files:
         // length limit check
         @DynamicTestingMethod
         CheckResult test4() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("11");
             output = main.execute("10");
@@ -135,7 +135,7 @@ files:
         // this stage test
         @DynamicTestingMethod
         CheckResult test5() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             main.execute("4");
             String output = main.execute("16");
@@ -160,7 +160,7 @@ files:
         // test of usage of full dictionary
         @DynamicTestingMethod
         CheckResult test6() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
 
             main.execute("6");
@@ -186,7 +186,7 @@ files:
         // tested incorrect word's length
         @DynamicTestingMethod
         CheckResult test7() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("0");
 
@@ -209,7 +209,7 @@ files:
         // the dictionary is less than word's length
         @DynamicTestingMethod
         CheckResult test8() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             main.execute("10");
             main.execute("9");
@@ -224,7 +224,7 @@ files:
         // test of dictionary's limit
         @DynamicTestingMethod
         CheckResult test9() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output;
             main.execute("9");
@@ -245,7 +245,7 @@ files:
         // test of words input
         @DynamicTestingMethod
         CheckResult test10() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output;
             output = main.execute("abcdefg 1 -6");

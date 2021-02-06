@@ -33,7 +33,7 @@ files:
         // basic test case
         @DynamicTestingMethod
         CheckResult test1() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("4").toLowerCase().trim();
 
@@ -42,7 +42,7 @@ files:
 
         @DynamicTestingMethod
         CheckResult test2() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("1").toLowerCase().trim();
 
@@ -52,7 +52,7 @@ files:
         // test of incorrect input
         @DynamicTestingMethod
         CheckResult test4() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("11").toLowerCase().trim();
 
@@ -61,7 +61,7 @@ files:
 
         @DynamicTestingMethod
         CheckResult test5() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("6").toLowerCase().trim();
 
@@ -70,7 +70,7 @@ files:
 
         @DynamicTestingMethod
         CheckResult test6() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("3").toLowerCase().trim();
 
@@ -115,5 +115,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/projects/53/stages/289/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 06 Feb 2021 22:00:25 UTC
 record: -1

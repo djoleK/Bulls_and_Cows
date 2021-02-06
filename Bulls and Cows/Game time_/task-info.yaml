@@ -31,7 +31,7 @@ files:
         // base test with 1 digit number
         @DynamicTestingMethod
         CheckResult test1() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
 
             String output;
@@ -60,7 +60,7 @@ files:
         // standard bulls and cows game
         @DynamicTestingMethod
         CheckResult test2() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("4");
 
@@ -87,7 +87,7 @@ files:
         // max length we can check
         @DynamicTestingMethod
         CheckResult test3() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("6");
 
@@ -114,7 +114,7 @@ files:
         // length limit check
         @DynamicTestingMethod
         CheckResult test4() {
-            TestedProgram main = new TestedProgram(Main.class);
+            TestedProgram main = new TestedProgram();
             main.start();
             String output = main.execute("11");
 
