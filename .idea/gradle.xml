@@ -12,10 +12,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Bulls and Cows/task" />
+            <option value="$PROJECT_DIR$/Problems/Area of a circle" />
             <option value="$PROJECT_DIR$/Problems/Arithmetic average" />
             <option value="$PROJECT_DIR$/Problems/Check if an array is sorted ascending" />
             <option value="$PROJECT_DIR$/Problems/Hidden enumeration" />
             <option value="$PROJECT_DIR$/Problems/Shape" />
+            <option value="$PROJECT_DIR$/Problems/Squirrels and nuts" />
             <option value="$PROJECT_DIR$/Problems/Tens digit" />
             <option value="$PROJECT_DIR$/Problems/The integer barrier" />
             <option value="$PROJECT_DIR$/util" />

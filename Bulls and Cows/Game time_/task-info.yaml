@@ -244,6 +244,12 @@ files:
         }
     }
   learner_created: false
+- name: src/bullscows/BullsAndCowsGame.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/53/stages/290/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 20 Feb 2021 09:55:55 UTC
+record: 4
